@@ -12,12 +12,11 @@ public class Main {
 		
 		
 		try {
-			if(!list.isEmpty()) 
+			if(!list.isEmpty() && list.size() == 2) 
 				Contador.contar(list.get(0), list.get(1));
 		
 		}catch (Exception exception) {
-			System.out.println("O segundo parâmetro deve ser maior que o primeiro: " + exception);
+			System.out.println("O segundo parâmetro deve ser maior que o primeiro");
 		}
-		
 	}
 }

@@ -1,9 +1,5 @@
 package estudo.dio.projeto;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 import estudo.dio.excepitons.ParametrosInvalidosException;
 
 public class Contador {
