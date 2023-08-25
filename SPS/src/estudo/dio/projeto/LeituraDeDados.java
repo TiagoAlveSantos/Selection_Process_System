@@ -23,8 +23,8 @@ public class LeituraDeDados {
 			System.out.println("Digite o segundo parâmetro");
 			lista.add(terminal.nextInt());
 
-		} catch (InputMismatchException exception) {
-			System.out.println("Problema na Leitura, entre com um numero inteiro");
+		} catch (InputMismatchException | LeituraInvalidaException exception) {
+			throw new LeituraInvalidaException();
 		}
 		return lista;
 	}
